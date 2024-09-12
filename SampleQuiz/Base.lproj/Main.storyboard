@@ -50,6 +50,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWX-sT-F3d">
+                                <rect key="frame" x="16" y="89" width="377" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wgp-u0-nt1">
                                 <rect key="frame" x="16" y="155" width="361" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -99,13 +106,10 @@
                                     <action selector="btnActionWithSender:" destination="Lte-WW-ddB" eventType="touchUpInside" id="DoM-2O-Y1i"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWX-sT-F3d">
-                                <rect key="frame" x="16" y="89" width="377" height="36"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-1b-RxW">
+                                <rect key="frame" x="10" y="20" width="374" height="374"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K0x-R7-TeR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -115,6 +119,7 @@
                         <outlet property="answerButton2" destination="Qxi-CJ-dZs" id="k9A-3t-hRC"/>
                         <outlet property="answerButton3" destination="OQY-LD-6sZ" id="MyP-tT-JD9"/>
                         <outlet property="answerButton4" destination="Swk-x2-wFG" id="1yr-vz-SUq"/>
+                        <outlet property="judgeImageView" destination="kvf-1b-RxW" id="VKs-h1-CDN"/>
                         <outlet property="quizNumberLabel" destination="AWX-sT-F3d" id="D4h-B3-cvE"/>
                         <outlet property="quizTextView" destination="wgp-u0-nt1" id="nwv-GV-tUx"/>
                         <segue destination="QDp-PJ-iD8" kind="presentation" identifier="toScoreVC" id="4Fe-tV-j7b"/>
