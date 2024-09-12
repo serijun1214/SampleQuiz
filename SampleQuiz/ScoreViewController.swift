@@ -15,7 +15,10 @@ class ScoreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func roTopButtonAction(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
